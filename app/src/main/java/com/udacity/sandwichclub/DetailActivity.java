@@ -3,12 +3,16 @@ package com.udacity.sandwichclub;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.TextUtils;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 import com.udacity.sandwichclub.model.Sandwich;
 import com.udacity.sandwichclub.utils.JsonUtils;
+
+import java.util.List;
 
 public class DetailActivity extends AppCompatActivity {
 
@@ -36,14 +40,14 @@ public class DetailActivity extends AppCompatActivity {
 
         String[] sandwiches = getResources().getStringArray(R.array.sandwich_details);
         String json = sandwiches[position];
-        Sandwich sandwich = JsonUtils.parseSandwichJson(json);
+        Sandwich sandwich = new JsonUtils().parseSandwichJson(json);
         if (sandwich == null) {
             // Sandwich data unavailable
             closeOnError();
             return;
         }
 
-        populateUI();
+        populateUI(sandwich);
         Picasso.with(this)
                 .load(sandwich.getImage())
                 .into(ingredientsIv);
@@ -56,7 +60,28 @@ public class DetailActivity extends AppCompatActivity {
         Toast.makeText(this, R.string.detail_error_message, Toast.LENGTH_SHORT).show();
     }
 
-    private void populateUI() {
+    private void populateUI(Sandwich sandwich) {
+        TextView descriptionView = findViewById(R.id.description_tv);
+        descriptionView.setText(sandwich.getDescription());
+
+        TextView originView = findViewById(R.id.origin_tv);
+        originView.setText(sandwich.getPlaceOfOrigin());
+
+        TextView alsoKnownView = findViewById(R.id.also_known_tv);
+        List<String> alsoKnownAs = sandwich.getAlsoKnownAs();
+        if (alsoKnownAs != null) {
+            alsoKnownView.setText(TextUtils.join("\n", alsoKnownAs));
+        } else {
+            alsoKnownView.setText("");
+        }
+
+        TextView ingridentsView = findViewById(R.id.ingredients_tv);
+        List<String> ingredients = sandwich.getIngredients();
+        if (ingredients != null) {
+            ingridentsView.setText(TextUtils.join("\n", ingredients));
+        } else {
+            ingridentsView.setText("");
+        }
 
     }
 }

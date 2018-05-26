@@ -75,7 +75,7 @@
             bread\",\"Stewed meat\",\"Condiments\"]}
         </item>
         <item>{\"name\":{\"mainName\":\"Medianoche\",\"alsoKnownAs\":[\"Cuban
-            Sandwich\"]},\"placeOfOrigin\":\"Cuba\",\"description\":\"Medianoche (\\\"midnight\\\"
+            Sandwich\"]},\"placeOfOrigin\":\"Cuba\",\"description\":\"Medianoche (\'midnight\'
             in Spanish) is a type of sandwich which originated in Cuba. It is served in many Cuban
             communities in the United States. It is so named because of the sandwich\'s popularity
             asa staple served in Havana\'s night clubs right around or after
@@ -94,8 +94,8 @@
             or more of beef, lamb, pork, veal\",\"Onions\",\"Bread crumbs\",\"Lard\"]}
         </item>
         <item>{\"name\":{\"mainName\":\"Roujiamo\",\"alsoKnownAs\":[\"Rougamo\",\"Rou jia
-            mo\"]},\"placeOfOrigin\":\"China\",\"description\":\"Roujiamo, meaning \\\"meat
-            burger\\\" or \\\"meat sandwich\\\", is a street food originating from the cuisine of
+            mo\"]},\"placeOfOrigin\":\"China\",\"description\":\"Roujiamo, meaning \'meat
+            burger\' or \'meat sandwich\', is a street food originating from the cuisine of
             Shaanxi Province and now widely consumed all over China. The meat is most commonly pork,
             stewed for hours in a soup containing over 20 spices and seasonings. Although it is
             possible to use only a few spices (which many vendors do), the resulting meat is less
@@ -110,7 +110,7 @@
             (generally with accompaniments), or as a sandwich or wrap. Shawarma is usually eaten
             with tabbouleh, fattoush, taboon bread, tomato, and cucumber. Toppings include tahini,
             hummus, pickled turnips, and
-            amba.\",\"image\":\"https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Shawarmafood.jpg/800px-Shawarmafood.jpg\",\"ingredients\":[\"Shawarma
+            amba.\",\"image\":\"https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Shawarma_Sandwich.jpg/800px-Shawarma_Sandwich.jpg\",\"ingredients\":[\"Shawarma
             meat (lamb, chicken, turkey, beef) or shawarma falafel\",\"Pita or wrap
             bread\",\"Chopped or shredded vegetables\",\"Pickles\",\"Assorted condiments\"]}
         </item>
